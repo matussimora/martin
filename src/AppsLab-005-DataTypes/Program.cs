@@ -12,6 +12,8 @@ Console.WriteLine(mojeSlovo);
 Console.WriteLine($"Súčet je: {sucet}");
 Console.WriteLine($"dnes je robotkac{dnesnyDatum.ToString("yyyy-MM-dd")}");
 Console.WriteLine($"Bool Hodnota je: {mojaBoolHodnota}");
+Console.WriteLine(myVar);
+Console.WriteLine(myFloat);
 
 
 
