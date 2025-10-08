@@ -1,14 +1,17 @@
-﻿{
-    //privitanie
-    Console.WriteLine("Moja prvá kalkulačka");
+﻿Console.WriteLine("Zadaj prvé číslo");
+int cislo1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Zadaj druhé číslo");
+int cislo2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Zadaj operáciu +,-,*,/,%");
+string operacia = Console.ReadLine();
 
-    //načitam čislo
-    string? prveCislo = Console.ReadLine();
-    //načitam 2. číslo
-    string? druheCislo = Console.ReadLine();
-    //spravim sucet
-    int sucet = int.Parse(prveCislo) + int.Parse(druheCislo);
-    //vypíšem sučet
-    Console.WriteLine($"Súčet:" + sucet);
+int vysledok = operacia switch
+{
+    "+" => cislo1 + cislo2,
+    "-" => cislo1 - cislo2,
+    "*" => cislo1 * cislo2,
+    "/" => cislo1 / cislo2,
+    "%" => cislo1 % cislo2,
+};
 
-}
+Console.WriteLine($"Tvoj vysledok je {vysledok}");
